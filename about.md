@@ -1,30 +1,32 @@
 ---
 layout: page
+menupage: true
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+<img style="float: left; margin: 0 1em 0  0;" src="http://gravatar.com/avatar/696cf5da599733261059de06c4d1fe22?size=150">
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I'm a software guy based in Tokyo, Japan.
 
-There are currently two themes built on Poole:
+As a Software Engineer at [CyberAgent, Inc.]<sup>([English])</sup>, I spend my days working on iOS apps. And yes, all my day-to-day work is done in Japanese :)
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+My current project is the [iOS companion app](https://itunes.apple.com/en/app/id911640835) to [Ameba Ownd]. It aims to be the easiest way for anyone to set up and manage their own stylish website.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+## Tools
 
-## Setup
+This is where I list buzzwords of technologies I've worked with:
 
-Some fun facts about the setup of this project include:
+- Swift, Objective-C, Cocoa, iOS
+- Go
+- nginx, AWS, Ansible
+- Java, Android
+- MySQL, PostgreSQL, Redis
+- PHP
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+I have also recently taken an interest in functional programming languages such as Haskell and Scala.
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
 
-Thanks for reading!
+
+[CyberAgent, Inc.]: https://www.cyberagent.co.jp/
+[English]:  https://www.cyberagent.co.jp/en/
+[Ameba Ownd]: https://www.amebaownd.com/go
