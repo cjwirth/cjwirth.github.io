@@ -9,7 +9,12 @@ There are many like it, but this one is mine.
 
 Caesar Wirth - cjwirth@gmail.com
 
-[![Twitter](https://g.twimg.com/Twitter_logo_blue.png =50x) @cjwirth](https://twitter.com/cjwirth)
+[<img src="https://g.twimg.com/Twitter_logo_blue.png" width="50px" alt="Twitter" style="vertical-align: middle;"> @cjwirth](https://twitter.com/cjwirth)
+
+## Acknowledgements
+
+- Generated with [jekyll](http://jekyllrb.com/) 
+- Theme: modified version of [poole/hyde](https://github.com/poole/hyde) by Mark Otto ([@mdo](http://twitter.com/mdo))
 
 
 ## License
