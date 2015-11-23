@@ -4,7 +4,6 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            'Caesar Wirth'
@@ -26,3 +25,5 @@ twitter:          https://twitter.com/cjwirth
 github:           https://github.com/cjwirth
 linkedin:         https://www.linkedin.com/in/cjwirth
 stackoverflow:    http://stackoverflow.com/users/1403046/cjwirth
+
+gems: [jekyll-paginate]
