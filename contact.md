@@ -7,7 +7,6 @@ title: Contact
 Want to contact me? 
 I'm not too hard to find online:
 
-- [Facebook]({{ site.facebook }}) - Are you my friend?
 - [Twitter (**@cjwirth**)]({{ site.twitter }}) - Listen to my daily thoughts
 - [Github (**cjwirth**)]({{ site.github }}) - Check out some of my code
 - [Linkedin]({{ site.linkedin }}) - Professional inqueries and coworkers
