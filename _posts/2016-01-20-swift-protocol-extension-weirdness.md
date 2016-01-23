@@ -97,13 +97,13 @@ Alright, let's check out the new functionality we added to our _Ferocious_ creat
 
 ```Swift
 let dinosaur: Dinosaur = Dinosaur()
-dinosaur.roar() // "BITE!!!"
+dinosaur.bite() // "BITE!!!"
 
 let dog: Dog = Dog()
-dog.roar() // "nom nom nom"
+dog.bite() // "nom nom nom"
 
 let ferociousDog: Ferocious = Dog()
-ferociousDog.roar() // "BITE!!!"
+ferociousDog.bite() // "BITE!!!"
 ```
 Okay, it seems like something is wrong here. The _Dinosaur_ is alright, becuase it's just using the default implementation. But our two _Dog_s are behaving differently... That's odd...
 
@@ -120,13 +120,13 @@ protocol Ferocious {
 ...
 
 let dinosaur: Dinosaur = Dinosaur()
-dinosaur.roar() // "BITE!!!"
+dinosaur.bite() // "BITE!!!"
 
 let dog: Dog = Dog()
-dog.roar() // "nom nom nom"
+dog.bite() // "nom nom nom"
 
 let ferociousDog: Ferocious = Dog()
-ferociousDog.roar() // "nom nom nom!!!"
+ferociousDog.bite() // "nom nom nom!!!"
 ```
 
 There we go, that's more like what we expected.
