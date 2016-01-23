@@ -10,7 +10,7 @@ I'm a software guy based in Tokyo, Japan.
 
 As a Software Engineer at [CyberAgent, Inc.]<sup>([English])</sup>, I spend my days working on iOS apps. And yes, all my day-to-day work is done in Japanese :)
 
-My current project is the [iOS companion app](https://itunes.apple.com/en/app/id911640835) to [Ameba Ownd]. It aims to be the easiest way for anyone to set up and manage their own stylish website.
+I am currently working on [AbemaTV], a live video streaming service that should be out in Spring 2016!
 
 ## Tools
 
@@ -29,4 +29,5 @@ I have also recently taken an interest in functional programming languages such 
 
 [CyberAgent, Inc.]: https://www.cyberagent.co.jp/
 [English]:  https://www.cyberagent.co.jp/en/
+[AbemaTV]: http://abema.tv
 [Ameba Ownd]: https://www.amebaownd.com/go
