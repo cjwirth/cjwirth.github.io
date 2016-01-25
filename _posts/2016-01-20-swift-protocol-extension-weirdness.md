@@ -12,7 +12,7 @@ It turns out protocol extension methods can be unintuitive sometimes.
 
 <!--excerpt-->
 
-### Protocols Acting Accoring to Protocol
+### Protocols Acting According to Protocol
 
 What makes protocols great is that you separate declaration from definition -- you can have different types conform to the same protocol, but they might implement the functions in their own way.
 
@@ -105,7 +105,7 @@ dog.bite() // "nom nom nom"
 let ferociousDog: Ferocious = Dog()
 ferociousDog.bite() // "BITE!!!"
 ```
-Okay, it seems like something is wrong here. The _Dinosaur_ is alright, becuase it's just using the default implementation. But our two _Dog_s are behaving differently... That's odd...
+Okay, it seems like something is wrong here. The _Dinosaur_ is alright, because it's just using the default implementation. But our two _Dog_s are behaving differently... That's odd...
 
 Did you catch the difference? The `dog` is defined as a _Dog_ type, whereas `ferociousDog` is defined only as a _Ferocious_ type. 
 
