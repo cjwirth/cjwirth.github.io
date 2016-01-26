@@ -12,7 +12,7 @@ It turns out protocol extension methods can be unintuitive sometimes.
 
 <!--excerpt-->
 
-### Protocols Acting According to Protocol
+## Protocols Acting According to Protocol
 
 What makes protocols great is that you separate declaration from definition -- you can have different types conform to the same protocol, but they might implement the functions in their own way.
 
@@ -52,7 +52,7 @@ ferociousDog.roar() // "woof!"
 
 In this case, it acts exactly as we expect. A _Dinosaur_ will be called with the default implementation. A _Dog_ will call _Dog_'s implementation of it, whether or not it is being treated as a _Dog_ or a _Ferocious_. It is a _Dog_, after all.
 
-### Protocols Breaking Protocol
+## Protocols Breaking Protocol
 
 But then what if we wanted to add some more functionality to _Ferocious_? What would happen if we added a `bite()` method to our protocol extension?
 
@@ -131,7 +131,7 @@ ferociousDog.bite() // "nom nom nom!!!"
 
 There we go, that's more like what we expected.
 
-### Why??
+## Why??
 
 While confusing at first, there is some logic to this behavior. 
 
@@ -141,8 +141,21 @@ If you only have it in the protocol extension and your object's implementation, 
 
 That's why when we declared a _Dog_ instance, we called _Dog_ methods, and when we declared a _Ferocious_ instance, we called _Ferocious_ instances.
 
-### Conclusion
+## Conclusion
 
 Put all your protocol methods in the protocol section. If you need some helper extension functions, make them private so you don't accidentally call the wrong implementation.
 
 That's my recommendation, but if you can think of any situation where it makes sense to use those extension methods, leave a comment! I'd love to hear it.
+
+## _Update_
+
+[@NatashaTheRobot](https://twitter.com/natashatherobot) told me on [Twitter](https://twitter.com/natashatherobot/status/691746665376653312) that this behavior is an intended feature of the language! It can help adding a kind of mixin functionality. She showed me an [example using it for Segue Identifiers](https://www.natashatherobot.com/protocol-oriented-segue-identifiers-swift/) that seems to make sense.
+
+It is also mentioned in the WWDC talk about [Protocol-Oriented Programming](https://developer.apple.com/videos/play/wwdc2015-408/). The relevant bits start at around 29:30. 
+
+> [Protocol] Requirements create customization points ... Should everything in your protocol extension also be backed by a requirement?  Not necessarily. Some APIs are just not intended as customization points.
+
+I think that's really the key point right there. Make your protocol method a requirement if it's meant for customization.
+
+And try not to shadow your non-required protocol methods! You could end up with a confusing bug on your hands!
+
