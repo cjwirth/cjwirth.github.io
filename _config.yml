@@ -1,14 +1,8 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
-
 # Permalinks
 permalink:        pretty
 
 # Setup
 title:            'Caesar Wirth'
-tagline:          'A Jekyll theme'
-description:      'My super cool blog'
 url:              http://cjwirth.com
 baseurl:          /
 
@@ -26,4 +20,5 @@ github:           https://github.com/cjwirth
 linkedin:         https://www.linkedin.com/in/cjwirth
 stackoverflow:    http://stackoverflow.com/users/1403046/cjwirth
 
-gems: [jekyll-paginate]
+gems: 
+  - jekyll-paginate

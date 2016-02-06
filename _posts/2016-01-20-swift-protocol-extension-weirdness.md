@@ -18,7 +18,7 @@ What makes protocols great is that you separate declaration from definition -- y
 
 Swift 2 gave us _protocol extensions_, and we can add some default behavior to our protocols.
 
-```Swift
+~~~ swift
 protocol Ferocious {
     func roar()
 }
@@ -48,7 +48,7 @@ dog.roar() // "woof!"
 
 let ferociousDog: Ferocious = Dog()
 ferociousDog.roar() // "woof!"
-```
+~~~
 
 In this case, it acts exactly as we expect. A _Dinosaur_ will be called with the default implementation. A _Dog_ will call _Dog_'s implementation of it, whether or not it is being treated as a _Dog_ or a _Ferocious_. It is a _Dog_, after all.
 
@@ -56,21 +56,21 @@ In this case, it acts exactly as we expect. A _Dinosaur_ will be called with the
 
 But then what if we wanted to add some more functionality to _Ferocious_? What would happen if we added a `bite()` method to our protocol extension?
 
-```Swift
+~~~ swift
 protocol Ferocious {
-	func roar()
+    func roar()
 }
 
 extension Ferocious {
-	func roar() {
-		print("ROOOAAARRR!!!")
-	}
-	
-	func bite() {
-	    print("BITE!!!")
-	}
+    func roar() {
+        print("ROOOAAARRR!!!")
+    }
+    
+    func bite() {
+        print("BITE!!!")
+    }
 }
-```
+~~~
 
 But we don't want our _Dog_ to bite in capital letters! Our app's only requires cute puppies.
 
@@ -80,22 +80,22 @@ But we don't want our _Dog_ to bite in capital letters! Our app's only requires 
 
 So we'll just make him nom a bit:
 
-```Swift
+~~~ swift
 struct Dog: Ferocious {
     // We don't want the default, so we define our own
     func roar() {
         print("woof!")
     }
-   	 
+        
     func bite() {
         print("nom nom nom")
     }
 }
-```
+~~~
 
 Alright, let's check out the new functionality we added to our _Ferocious_ creatures.
 
-```Swift
+~~~ swift
 let dinosaur: Dinosaur = Dinosaur()
 dinosaur.bite() // "BITE!!!"
 
@@ -104,17 +104,18 @@ dog.bite() // "nom nom nom"
 
 let ferociousDog: Ferocious = Dog()
 ferociousDog.bite() // "BITE!!!"
-```
+~~~
+
 Okay, it seems like something is wrong here. The _Dinosaur_ is alright, because it's just using the default implementation. But our two _Dog_s are behaving differently... That's odd...
 
 Did you catch the difference? The `dog` is defined as a _Dog_ type, whereas `ferociousDog` is defined only as a _Ferocious_ type. 
 
 However, if we move the `bite` function out of the _extension_ and into the _protocol_, we can see that it behaves as we originally wanted it to:
 
-```Swift
+~~~ swift
 protocol Ferocious {
-	func roar()
-	func bite()
+    func roar()
+    func bite()
 }
 
 ...
@@ -127,7 +128,7 @@ dog.bite() // "nom nom nom"
 
 let ferociousDog: Ferocious = Dog()
 ferociousDog.bite() // "nom nom nom!!!"
-```
+~~~
 
 There we go, that's more like what we expected.
 

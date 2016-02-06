@@ -27,23 +27,23 @@ That sounds like a lot of work, and my custom swipe back could look out of place
 
 All I want to do is provide a custom transition, so really all you need to implement is one method. I don't care about the rest. I only want this one:
 
-```Swift
+~~~ swift
 func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-	    // Some transition from somewhere
-	    return transition
+        // Some transition from somewhere
+        return transition
 }
-```
+~~~
 
 Wouldn't it be nice if I could _just_ intercept that one method? I tried making a wrapper class that returns the transition, and hands the delegate keys back to the whoever was the previous delegate.
 
-```Swift
+~~~ swift
 func navigationController(navigationController: UINavigationController, didShowViewController viewController: UIViewController, animated: Bool) {
-	    // Now that the transition is complete, 
-	    // so we'll return delegate to what it used to be
-	    navigationController.delegate = previousDelegate
-	    previousDelegate = nil
+        // Now that the transition is complete, 
+        // so we'll return delegate to what it used to be
+        navigationController.delegate = previousDelegate
+        previousDelegate = nil
 }
-```
+~~~
 
 And that's really all it took. I get my awesome custom animation, and my users can still swipe back to the previous screen like they would expect.
 
