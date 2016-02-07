@@ -156,7 +156,7 @@ code {
   padding: .25em .5em;
   font-size: 85%;
   /*color: #bf616a;*/
-  background-color: #f9f9f9;
+  background-color: #f9fafa;
   border-radius: 3px;
 }
 pre {
@@ -166,16 +166,12 @@ pre {
   padding: 1rem;
   font-size: .8rem;
   line-height: 1.4;
-  background-color: #f9f9f9;
+  background-color: #f9fafa;
   /* Caesar Extensions */
   overflow-x: scroll;
   border-style: solid;
   border-width: thin;
-  border-color: #a9a9a9;
-  /*white-space: pre;*/
-  /*white-space: pre-wrap;*/
-  /*word-break: break-all;*/
-  /*word-wrap: break-word;*/
+  border-color: #E6E6E6;
 }
 pre code {
   padding: 0;
