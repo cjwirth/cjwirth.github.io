@@ -58,7 +58,7 @@ This has definitely been the most common use case for tuples in my code. It does
 
 ### Stored Function Parameters
 
-There's one cool feature about tuples that I think often gets overlooked. You can store a tuple somwehere and use it as all the parameters to a function.
+There's one cool feature about tuples that I think often gets overlooked. You can store a tuple somewhere and use it as all the parameters to a function.
 
 ~~~ swift
 func printUserInfo(name: String, age: Int) {
@@ -71,7 +71,7 @@ printUserInfo(caesar)
 
 Sure, this example is a little contrived, but what does it tell us? Functions actually take tuples. This gives opens up some interesting options. 
 
-Using this mixed with closures, we can chain fuctions together.
+Using this mixed with closures, we can chain functions together.
 
 ~~~ swift
 func fetchUser() -> (name: String, age: Int) { ... }
@@ -96,7 +96,7 @@ At their most basic, enums are just a type-safe way of specifying a set of mutua
 
 I've found that in practice, I find myself enums in two ever-so-slightly different ways. 
 
-One way is the traditioal "different choices of the same thing," e.g. an enum of video quality settings with the choices High, Medium, and Low.
+One way is the traditional "different choices of the same thing," e.g. an enum of video quality settings with the choices High, Medium, and Low.
 
 The other way is being completely different things, but in the same category. For example, analytics events that all have different meanings and associated values, but they are still all analytics events.
 
@@ -207,7 +207,7 @@ enum APIEndpoint: APIRequestable {
 }
 ~~~
 
-One thing that can get a little annoying is having to have a `switch` statement in each parameter. This can make your code longer than it feels like it needs to be, and you can't find all the information about one endpoit in one glance.
+One thing that can get a little annoying is having to have a `switch` statement in each parameter. This can make your code longer than it feels like it needs to be, and you can't find all the information about one endpoint in one glance.
 
 ## Structs
 
@@ -261,7 +261,7 @@ A lot of times you will see the names of these types end in `Manager`, `Controll
 
 As you can see, these classes are "do-ers" as opposed to the "be-ers" we had with structs.
 
-One of the easiet to understand examples is a class that is your data layer. Maybe you have a class where you can fetch and save users. 
+One of the easiest to understand examples is a class that is your data layer. Maybe you have a class where you can fetch and save users. 
 
 ~~~ swift
 class UserManager {
