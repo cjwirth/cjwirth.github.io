@@ -13,6 +13,12 @@ I'm going to show you how to fix this, without having to resort to going back to
 
 <!--excerpt-->
 
+---
+
+*This post was written with Xcode 7.3 (7D175). This is the second in a series of posts that will soon be out of date and meaningless! Check out the [first soon-to-be-outdated post](/2016/03/07/using-xcode-and-spm-together/) if you are interested!*
+
+---
+
 ## MVP to Crash and Burn
 
 To illustrate the problem, I'm going to be using a very small program that still crashes when run. The entire source code fits inside a [tweet](https://twitter.com/cjwirth/status/713629205636878336)!
@@ -167,5 +173,5 @@ Or if you are feeling ambitious, take a look at the Swift compiler source code a
 
 - ⭐️ [rdar://25330746](rdar://25330746) - Official Radar - Duplicate This!
 - [Swift Bug Report](https://bugs.swift.org/browse/SR-1055) - Check on progress
-- [Open Radar Report](http://www.openradar.me/25330746) - Unofficial bug track
+- [Open Radar Report](http://www.openradar.me/25330746) - Bug report on the unofficial tracker
 
