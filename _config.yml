@@ -3,7 +3,8 @@ permalink:        pretty
 
 # Setup
 title:            'Caesar Wirth'
-url:              http://cjwirth.com
+url:              https://cjwirth.com
+enforce_ssl:              cjwirth.com
 baseurl:          /
 
 excerpt_separator: '<!--excerpt-->'
