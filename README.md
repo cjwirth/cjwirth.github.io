@@ -7,7 +7,7 @@ There are many like it, but this one is mine.
 
 ## Author
 
-Caesar Wirth - cjwirth@gmail.com
+Caesar Wirth - caesar@cjwirth.com
 
 [<img src="https://g.twimg.com/Twitter_logo_blue.png" width="50px" alt="Twitter" style="vertical-align: middle;"> @cjwirth](https://twitter.com/cjwirth)
 

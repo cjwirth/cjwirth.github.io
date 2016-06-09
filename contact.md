@@ -12,7 +12,7 @@ I'm not too hard to find online:
 - [Linkedin]({{ site.linkedin }}) - Professional inqueries and coworkers
 - [stack**overflow** (**cjwirth**)]({{ site.stackoverflow }}) - I get help and help others with code
 
-For anything else, feel free to email me at `cjwirth <at> gmail [dot] com`
+For anything else, feel free to email me at `caesar <at> cjwirth [dot] com`
 
 <!-- <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
