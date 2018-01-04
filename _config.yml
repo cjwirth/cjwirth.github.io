@@ -5,7 +5,6 @@ permalink:        pretty
 title:            'Caesar Wirth'
 url:              https://cjwirth.com
 enforce_ssl:              cjwirth.com
-baseurl:          /
 
 excerpt_separator: '<!--excerpt-->'
 
