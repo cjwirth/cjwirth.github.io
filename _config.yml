@@ -1,5 +1,5 @@
 # Permalinks
-permalink:        pretty
+permalink:        /:categories/:title
 
 # Setup
 title:            'Caesar Wirth'
@@ -20,5 +20,5 @@ github:           https://github.com/cjwirth
 linkedin:         https://www.linkedin.com/in/cjwirth
 stackoverflow:    http://stackoverflow.com/users/1403046/cjwirth
 
-gems: 
+plugins:
   - jekyll-paginate

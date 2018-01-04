@@ -3,7 +3,7 @@ layout: post
 title: Swift Protocol Extension Weirdness
 ---
 
-Swift is a [protocol oriented language](https://developer.apple.com/videos/play/wwdc2015-408/), and I've found I can really provide a lot of power as well as flexibility by making good use of protocols. 
+Swift is a [protocol oriented language](https://developer.apple.com/videos/play/wwdc2015-408/), and I've found I can really provide a lot of power as well as flexibility by making good use of protocols.
 
 The other day I was chasing down a confusing bug. For some reason my protocol methods _weren't being called!_
 
@@ -65,7 +65,7 @@ extension Ferocious {
     func roar() {
         print("ROOOAAARRR!!!")
     }
-    
+
     func bite() {
         print("BITE!!!")
     }
@@ -76,7 +76,7 @@ But we don't want our _Dog_ to bite in capital letters! Our app's only requires 
 
 ![Puppy in Mug Cup](/public/images/20160120/ferocious-puppy.jpg)
 
-<center>_Watch out, he's actually got quite a bite_</center>
+> _Watch out, he's actually got quite a bite!_
 
 So we'll just make him nom a bit:
 
@@ -86,7 +86,7 @@ struct Dog: Ferocious {
     func roar() {
         print("woof!")
     }
-        
+
     func bite() {
         print("nom nom nom")
     }
@@ -106,9 +106,9 @@ let ferociousDog: Ferocious = Dog()
 ferociousDog.bite() // "BITE!!!"
 ~~~
 
-Okay, it seems like something is wrong here. The _Dinosaur_ is alright, because it's just using the default implementation. But our two _Dog_s are behaving differently... That's odd...
+Okay, it seems like something is wrong here. The _Dinosaur_ is alright, because it's just using the default implementation. But our two _Dogs_ are behaving differently... That's odd...
 
-Did you catch the difference? The `dog` is defined as a _Dog_ type, whereas `ferociousDog` is defined only as a _Ferocious_ type. 
+Did you catch the difference? The `dog` is defined as a _Dog_ type, whereas `ferociousDog` is defined only as a _Ferocious_ type.
 
 However, if we move the `bite` function out of the _extension_ and into the _protocol_, we can see that it behaves as we originally wanted it to:
 
@@ -134,11 +134,11 @@ There we go, that's more like what we expected.
 
 ## Why??
 
-While confusing at first, there is some logic to this behavior. 
+While confusing at first, there is some logic to this behavior.
 
-If you have the method in the protocol section, then it is clear that there is a method that the protocol provides. 
+If you have the method in the protocol section, then it is clear that there is a method that the protocol provides.
 
-If you only have it in the protocol extension and your object's implementation, it's just an overloaded method. Whichever one is appropriate will run. 
+If you only have it in the protocol extension and your object's implementation, it's just an overloaded method. Whichever one is appropriate will run.
 
 That's why when we declared a _Dog_ instance, we called _Dog_ methods, and when we declared a _Ferocious_ instance, we called _Ferocious_ instances.
 
@@ -152,7 +152,7 @@ That's my recommendation, but if you can think of any situation where it makes s
 
 [@NatashaTheRobot](https://twitter.com/natashatherobot) told me on [Twitter](https://twitter.com/natashatherobot/status/691746665376653312) that this behavior is an intended feature of the language! It can help adding a kind of mixin functionality. She showed me an [example using it for Segue Identifiers](https://www.natashatherobot.com/protocol-oriented-segue-identifiers-swift/) that seems to make sense.
 
-It is also mentioned in the WWDC talk about [Protocol-Oriented Programming](https://developer.apple.com/videos/play/wwdc2015-408/). The relevant bits start at around 29:30. 
+It is also mentioned in the WWDC talk about [Protocol-Oriented Programming](https://developer.apple.com/videos/play/wwdc2015-408/). The relevant bits start at around 29:30.
 
 > [Protocol] Requirements create customization points ... Should everything in your protocol extension also be backed by a requirement?  Not necessarily. Some APIs are just not intended as customization points.
 
