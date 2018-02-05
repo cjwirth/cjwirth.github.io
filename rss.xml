@@ -1,0 +1,26 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ site.title }}</title>
+    <link href="{{ site.url }}/"/>
+    <description>A personal blog. Mostly tech, but also other stuff.</description>
+    <language>en-us</language>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+    <id>{{ site.url }}</id>
+    <managingEditor>{{ site.author.email }}</managingEditor>
+    <webMaster>{{ site.author.email }}</webMaster>
+    {% for post in site.posts %}
+    <item>
+      <title>{{ post.title }}</title>
+      <link href="{{ site.url }}{{ post.url }}"/>
+      <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+      <guid>{{ site.url }}{{ post.id }}</guid>
+      <description type="html">{{ post.content | xml_escape }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
