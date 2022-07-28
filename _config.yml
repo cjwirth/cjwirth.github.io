@@ -6,6 +6,8 @@ title:            'Caesar Wirth'
 url:              https://cjwirth.com
 enforce_ssl:              cjwirth.com
 
+include: ['.well-known']
+
 excerpt_separator: '<!--excerpt-->'
 
 author:
