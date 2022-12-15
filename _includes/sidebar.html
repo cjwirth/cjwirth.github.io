@@ -11,7 +11,7 @@
           {% assign social_links = site.data.social %}
           {% for node in social_links %}
           <li>
-            <a href="{{ node.link }}">
+            <a href="{{ node.link }}" rel="me">
             <i class="fa fa-brands fa-{{ node.class }}"></i>
             </a>
           </li>
