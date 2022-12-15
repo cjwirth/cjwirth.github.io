@@ -201,6 +201,10 @@ a.sidebar-nav-item:focus {
   background-color: #32CCFE;
 }
 
+.social-icons .fa-mastodon {
+  background-color: #6364FF;
+}
+
 .social-icons .fa-github-alt {
   background-color: #070709;
 }

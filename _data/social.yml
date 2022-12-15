@@ -1,5 +1,8 @@
-- class:    twitter
-  link:     https://twitter.com/cjwirth
+- class:    mastodon
+  link:     https://mas.to/@cjwirth
+
+# - class:    twitter
+#   link:     https://twitter.com/cjwirth
 
 - class:    github-alt
   link:     https://www.github.com/cjwirth
