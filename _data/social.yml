@@ -1,14 +1,14 @@
 - class:    mastodon
   link:     https://mas.to/@cjwirth
 
+- class:    github
+  link:     https://www.github.com/cjwirth
+
+- class:    linkedin2
+  link:     https://www.linkedin.com/in/cjwirth
+
 # - class:    twitter
 #   link:     https://twitter.com/cjwirth
 
-- class:    github-alt
-  link:     https://www.github.com/cjwirth
-
-- class:    linkedin
-  link:     https://www.linkedin.com/in/cjwirth
-
-- class:    stack-overflow
-  link:     http://stackoverflow.com/users/1403046/cjwirth
+# - class:    stack-overflow
+#   link:     http://stackoverflow.com/users/1403046/cjwirth

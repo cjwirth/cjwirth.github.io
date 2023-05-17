@@ -1,6 +1,6 @@
 /*
  * This CSS is a modified version of hyde: https://github.com/poole/hyde
- * Also released under the MIT license by @cjiwrth
+ * Also released under the MIT license by @cjwirth
  */
 
 /*
@@ -18,7 +18,7 @@
  *
  * Update the foundational and global aspects of the page.
  */
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+/*@import url(https://fonts.googleapis.com/css?family=Fira+Sans);*/
 
 html {
   font-family: Helvetica, Arial, sans-serif;
@@ -47,10 +47,19 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .sidebar {
-  text-align: center;
-  padding: 2rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem 0.5rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #2C303C;
+}
+
+.sidebar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 /* Sidebar links */
@@ -58,42 +67,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-.sidebar-about {
-  display: inline-block;
-}
-
 /* About section */
-
-.about-container {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: 'Fira Sans', sans-serif;
-  /*font-family: 'Architects Daughter', cursive;*/
-  font-size: 3.25rem;
-}
-
-.sidebar-icon {
-  text-align: center;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 2em;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 1.5em;
 }
 
 /* Sidebar nav */
 
+.sidebar-nav {
+  flex-grow: 1;
+}
 .sidebar-nav li {
-  display: inline;
+  display: inline-block;
   list-style-type: none;
   padding-right: 20px;
 }
 .sidebar-nav-item {
-  /*display: block;*/
   line-height: 1.75;
 }
 a.sidebar-nav-item:hover,
@@ -104,21 +97,24 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
-/* Sticky sidebar
- *
- * Add the `sidebar-sticky` class to the sidebar's container to affix it the
- * contents to the bottom of the sidebar in tablets and up.
- */
+/** Social */
 
-@media (min-width: 48em) {
-  .sidebar-sticky {
-    position: absolute;
-    right:  1rem;
-    bottom: 1rem;
-    left:   1rem;
-  }
+.sidebar-social h1 {
+  color: #fff;
+  margin-top: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.sidebar-social {
+  display: inline-block;
 }
 
+.sidebar-icon {
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2em;
+}
 
 /* Container
  *
@@ -215,4 +211,55 @@ a.sidebar-nav-item:focus {
 
 .social-icons .fa-stack-overflow {
   background-color: #FF7300;
+}
+
+@media (max-width: 38em) {
+  .sidebar-social {
+    display: none;
+  }
+  .sidebar-nav ul {
+    justify-content: right;
+  }
+}
+
+/**
+ * Probabaly move this to another file.
+ * Getting this all from here: https://icomoon.io/
+ */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/public/fonts/icomoon.eot?psol5w');
+  src:  url('/public/fonts/icomoon.eot?psol5w#iefix') format('embedded-opentype'),
+    url('/public/fonts/icomoon.ttf?psol5w') format('truetype'),
+    url('/public/fonts/icomoon.woff?psol5w') format('woff'),
+    url('/public/fonts/icomoon.svg?psol5w#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mastodon:before {
+  content: "\e900";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
 }
