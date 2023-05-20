@@ -42,7 +42,7 @@ The shepherds were already partially with their herds, and carved vessels and fi
 
 As the traveler heard this and many other things from his grandfather, the girl hopped from one place to another. And when the man set out to go and leave, she offered him a bouquet of the lovely alp-violets, on which the drops of dew still hung.
 
-"Oh, dear girl," said the man, "you have already pleased me very much this morning, and now you give me such a nice present again! Could I also give you a gift that would give you so much joy, as your viola bouquet?" He thought for a while. Then he gave the old man a purse with money in his hand, saying, "For the girl."
+"Oh, dear girl," said the man, "you have already pleased me very much this morning, and now you give me such a nice present again! Could I also give you a gift that would give you so much joy, as your violet bouquet?" He thought for a while. Then he gave the old man a purse with money in his hand, saying, "For the girl."
 
 Then he got up quickly from the grass, greeted the shepherd and the girl, and went on. The shepherd shouted his heartfelt thanks and wished him a happy journey. But Adelaide stood with shining eyes, and did not know what to say.
 
