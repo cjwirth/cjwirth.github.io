@@ -25,4 +25,4 @@ I'm not too hard to find online:
 - [Github (**cjwirth**)]({{ site.github }}) - Check out some of my code
 - [Linkedin]({{ site.linkedin }}) - Professional inqueries and coworkers
 
-For anything else, feel free to email me at me@cjwirth.com
+For anything else, feel free to email me at [**me@cjwirth.com**](mailto:me@cjwirth.com).
