@@ -24,6 +24,5 @@ I'm not too hard to find online:
 - [Mastodon (**@cjwirth@mas.to**)]({{ site.mastodon }}) - Listen to my daily thoughts
 - [Github (**cjwirth**)]({{ site.github }}) - Check out some of my code
 - [Linkedin]({{ site.linkedin }}) - Professional inqueries and coworkers
-- [stack**overflow** (**cjwirth**)]({{ site.stackoverflow }}) - I get help and help others with code
 
-For anything else, feel free to email me at `caesar <at> cjwirth [dot] com`
+For anything else, feel free to email me at me@cjwirth.com
