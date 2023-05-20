@@ -21,7 +21,7 @@ As a Software Engineer at [Duolingo], I spend my days working on the iOS app, bu
 Want to contact me?
 I'm not too hard to find online:
 
-- [Twitter (**@cjwirth**)]({{ site.twitter }}) - Listen to my daily thoughts
+- [Mastodon (**@cjwirth@mas.to**)]({{ site.mastodon }}) - Listen to my daily thoughts
 - [Github (**cjwirth**)]({{ site.github }}) - Check out some of my code
 - [Linkedin]({{ site.linkedin }}) - Professional inqueries and coworkers
 - [stack**overflow** (**cjwirth**)]({{ site.stackoverflow }}) - I get help and help others with code
