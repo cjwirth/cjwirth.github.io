@@ -14,7 +14,7 @@
           `layout: page` in the front-matter. See readme for usage.
         {% endcomment %}
 
-        {% assign pages_list = site.pages %}
+        {% assign pages_list = site.pages | sort: 'nav_order' %}
         {% for node in pages_list %}
           {% if node.title != null and node.menupage != null %}
             {% if node.layout == "page" %}

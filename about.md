@@ -1,7 +1,8 @@
 ---
 layout: page
 menupage: true
-title: About
+nav_order: 2
+title: Me
 ---
 I'm a software engineer, husband, father, reader, and all-around person based in Pittsburgh, PA, USA.
 
