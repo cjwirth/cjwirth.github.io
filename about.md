@@ -4,11 +4,11 @@ menupage: true
 nav_order: 2
 title: Me
 ---
-I'm a software engineer, husband, father, reader, and all-around person based in Pittsburgh, PA, USA.
+I'm a software engineer, husband and dad, and all-around person based in Berlin, Germany.
 
-As a Software Engineer at [Duolingo], I spend my days working on the iOS app, but will occasionally work on the backend servers when I need to.
+As a Software Engineer at [Duolingo], I currently co-lead a team focused on enabling engineers on iOS can build stable, performant, and well-tested features by using consistent and scalable architectural patterns.
 
-<img src="/public/images/me.jpg" width="200px" alt="Portrait of me sitting in a park.">
+<img src="/public/images/me.jpg" width="200px" alt="Head shot of me standing in an office.">
 <div style="clear: both;">
     <!-- Only here so the contact info goes beneath -->
 </div>
