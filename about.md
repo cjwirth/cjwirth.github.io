@@ -4,9 +4,10 @@ menupage: true
 nav_order: 2
 title: Me
 ---
-I'm a software engineer, husband and dad, and all-around person based in Berlin, Germany.
+I'm a software engineer, husband and dad, and all-around person based in Sapporo, Japan.
 
-As a Software Engineer at [Duolingo], I currently co-lead a team focused on enabling engineers on iOS can build stable, performant, and well-tested features by using consistent and scalable architectural patterns.
+After 9 years working at [Duolingo](https://duolingo.com), I'm currently taking some time off and not looking for any employment opportunities.
+
 
 <img src="/public/images/me.jpg" width="200px" alt="Head shot of me standing in an office.">
 <div style="clear: both;">
@@ -21,5 +22,3 @@ I'm not too hard to find online:
 - [Linkedin]({{ site.linkedin }}) - Professional inquiries and coworkers
 
 For anything else, feel free to email me at [**me@cjwirth.com**](mailto:me@cjwirth.com).
-
-[Duolingo]: https://www.duolingo.com/
